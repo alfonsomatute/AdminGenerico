@@ -2,12 +2,12 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 define('PROTOCOL', (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https" : "http");
-define('BASE_URL', PROTOCOL."://".$_SERVER['SERVER_NAME']."/github/AdminGenerico/admin.php");
-define('FULL_PATH', PROTOCOL."://".$_SERVER['SERVER_NAME']."/github/AdminGenerico/admin/views");
+define('BASE_URL', PROTOCOL."://".$_SERVER['SERVER_NAME']."/admin.php");
+define('FULL_PATH', PROTOCOL."://".$_SERVER['SERVER_NAME']."/admin/views");
 
 //Opcional si se usa TinyMCE con uploader de imagenes
-define('TINYMCE_UPLOADS_PATH', $_SERVER['DOCUMENT_ROOT']."github/AdminGenerico/application/uploads");
-define('TINYMCE_FULL_PATH', "http://".$_SERVER['SERVER_NAME']."/github/AdminGenerico/application/uploads");
+define('TINYMCE_UPLOADS_PATH', $_SERVER['DOCUMENT_ROOT']."application/uploads");
+define('TINYMCE_FULL_PATH', "http://".$_SERVER['SERVER_NAME']."/application/uploads");
 
 /*
 |--------------------------------------------------------------------------
