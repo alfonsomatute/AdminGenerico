@@ -525,6 +525,7 @@ class Smarty_Internal_Template extends Smarty_Internal_Data {
                 Smarty_Internal_Debug::end_cache($this);
             }
         } else {
+            
             // var_dump('renderTemplate', $this->has_nocache_code, $this->template_resource, $this->properties['nocache_hash'], $this->parent->properties['nocache_hash'], $this->rendered_content);
             if ($this->has_nocache_code && !empty($this->properties['nocache_hash']) && !empty($this->parent->properties['nocache_hash'])) {
                 // replace nocache_hash
